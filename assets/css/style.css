@@ -1,0 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background: #171a21;
+}
+
+.header .content {
+  width: 940px;
+  height: 104px;
+  margin: 0 auto;
+}
