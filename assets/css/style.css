@@ -5,14 +5,113 @@
 
 body {
   font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+  /*background: #171a21;*/
+  background: url('../images/background.png') center top no-repeat #011b01;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.hidden {
+  display: none;
 }
 
 .header {
-  background: #171a21;
+  background: #091e0a;
+  height: 104px;
 }
 
 .header .content {
+  position: relative;
   width: 940px;
   height: 104px;
   margin: 0 auto;
+}
+
+.header .logo {
+  float: left;
+  height: 44px;
+  padding-top: 30px;
+}
+
+.header .logo img {
+  height: 44px;
+}
+
+.header .nav {
+  position: absolute;
+  left: 150px;
+}
+
+.header .nav .item {
+  display: block;
+  position: relative;
+  padding: 46px 15px 7px 7px;
+  line-height: 16px;
+  float: left;
+  font-size: 16px;
+  color: #b8b6b4;
+  text-transform: uppercase;
+}
+
+.header .nav .item:hover {
+  color: #fff;
+}
+
+.header .user {
+  position: absolute;
+  right: 0px;
+  padding-top: 32px;
+}
+
+.header .user .avatar {
+  float: right;
+  height: 40px;
+}
+
+.header .user #reg-login {
+  color: #b8b6b4;
+}
+
+.header .user #reg-login .item {
+  display: block;
+  position: relative;
+  padding: 14px 0 7px 22px;
+  line-height: 16px;
+  float: left;
+  font-size: 16px;
+  color: #b8b6b4;
+  text-transform: uppercase;
+}
+
+.header .user #reg-login .item:hover {
+  color: #fff;
+}
+
+.header .user .avatar img {
+  height: 40px;
+}
+
+.header .user .info {
+  padding-right: 48px;
+  padding-top: 4px;
+  text-align: right;
+  color: #b8b6b4;
+}
+
+.header .user .info .name {
+  font-size: 14px;
+}
+
+.header .user .info .balance {
+  font-size: 12px;
+}
+
+.header .search {
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  background: rgba(3, 209, 1, 0.3);
 }
