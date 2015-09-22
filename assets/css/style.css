@@ -15,7 +15,8 @@ h1, h2, h3, h4, h5, h6 {
 a {
   text-decoration: none;
   color: #ffffff;
-  transition: color 0.2s linear;
+  transition: color 0.2s linear,
+              background 0.2s linear;
 }
 
 .hidden {
@@ -24,20 +25,42 @@ a {
 
 .header {
   background: #091e0a;
-  height: 104px;
+  color: #b8b6b4;
+}
+
+.header a {
+  color: #b8b6b4;
+}
+
+.header a:hover {
+  color: #fff;
+}
+
+.header a.item {
+  display: inline-block;
+  height: 80px;
+  padding: 0 15px 0 15px;
+  line-height: 80px;
+  font-size: 16px;
+  color: #b8b6b4;
+  text-transform: uppercase;
+}
+
+.header a.item:hover {
+  background: #001100;
 }
 
 .header .content {
   position: relative;
   width: 940px;
-  height: 104px;
+  height: 80px;
   margin: 0 auto;
 }
 
 .header .logo {
   float: left;
   height: 44px;
-  padding-top: 30px;
+  padding-top: 18px;
 }
 
 .header .logo img {
@@ -49,64 +72,22 @@ a {
   left: 150px;
 }
 
-.header .nav .item {
-  display: block;
-  position: relative;
-  padding: 46px 15px 7px 7px;
-  line-height: 16px;
-  float: left;
-  font-size: 16px;
-  color: #b8b6b4;
-  text-transform: uppercase;
-}
-
-.header .nav .item:hover {
-  color: #fff;
+.header .cart {
+  position: absolute;
+  top: 22px;
+  right: 150px;
+  font-size: 26px;
 }
 
 .header .right {
   position: absolute;
   right: 0;
-  padding-top: 32px;
 }
 
 .header .right .avatar {
   float: right;
   height: 40px;
-}
-
-.header .right #reg-login {
-  color: #b8b6b4;
-}
-
-.header .right #reg-login .item {
-  display: block;
-  position: relative;
-  padding: 14px 0 7px 22px;
-  line-height: 16px;
-  float: left;
-  font-size: 16px;
-  color: #b8b6b4;
-  text-transform: uppercase;
-}
-
-.header .right #reg-login .item:hover {
-  color: #fff;
-}
-
-.header .cart {
-  position: absolute;
-  top: 38px;
-  right: 150px;
-  font-size: 26px;
-}
-
-.header .cart a {
-  color: #b8b6b4;
-}
-
-.header .cart a:hover {
-  color: #fff;
+  padding-top: 20px;
 }
 
 .header .right .avatar img {
@@ -115,7 +96,7 @@ a {
 
 .header .right .info {
   padding-right: 48px;
-  padding-top: 4px;
+  padding-top: 22px;
   text-align: right;
   color: #b8b6b4;
 }
