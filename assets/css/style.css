@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
   transition: color 0.2s linear,
               background 0.2s linear;
 }
@@ -48,6 +48,7 @@ a {
 
 .header a.item:hover {
   background: #001100;
+  color: #fff;
 }
 
 .header .content {
@@ -60,7 +61,7 @@ a {
 .header .logo {
   float: left;
   height: 44px;
-  padding-top: 18px;
+  padding-top: 16px;
 }
 
 .header .logo img {
@@ -112,7 +113,7 @@ a {
 .header .search {
   position: absolute;
   right: 0;
-  top: 112px;
+  top: 96px;
 }
 
 .header .search .search-box {
@@ -206,7 +207,7 @@ a {
   width: 190px;
 }
 
-.gamelist .game .game-price {
+.gamelist .game .game-price-badge {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -216,8 +217,17 @@ a {
   transition: background 0.2s linear;
 }
 
-.gamelist .game:hover .game-price {
+.gamelist .game:hover .game-price-badge {
   background: url('../images/badge-light.png');
+}
+
+.gamelist .game .game-price {
+  position: absolute;
+  bottom: 4px;
+  right: 0;
+  width: 61px;
+  text-align: center;
+  font-size: 13px;
 }
 
 #sidebar {
