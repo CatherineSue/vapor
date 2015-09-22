@@ -7,34 +7,6 @@
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-          <script src="./assets/js/jquery-2.1.4.js"></script>
-      <!- New ->
-		<script type="text/javascript" src="./assets/js/jQuery-easing.js"></script>
-		<script type="text/javascript" src="./assets/js/jQuery-jcImgScroll.js"></script>
-		<script type="text/javascript">
-		$(function(){
-			$("#demo").jcImgScroll({
-				arrow : {
-					width:300,	
-					height:400,
-					x:60,
-					y:0
-				},
-			    width :330, //设置图片宽度
-				height:469, //设置图片高度
-				imgtop:22,//每张图片的上下偏移量
-				imgleft:-20,//每张图片的左边偏移量
-				imgwidth:30,//每张图片的宽度偏移量
-				imgheight:44,//每张图片的高度偏移量
-				count : 9,
-				offsetX : 60,
-				NumBtn : false,
-				title:false,
-				setZoom:.8,
-			});
-		
-		});
-		</script>
   </head>
   <body>
     <div class="container">
@@ -43,56 +15,136 @@
           <div class="logo">
             <a href="index.html"><img src="./assets/images/vapor.png" alt="Vapor" /></a>
           </div>
+          
           <nav class="nav">
             <a class="item" href="index.html">商店</a>
             <a class="item" href="user.html#library">游戏库</a>
           </nav>
-          <div class="user">
+          
+          <div class="right">
+            <div id="cart">
+            </div>
             <div id="reg-login" class="hidden">
               <a class="item" href="register.html">注册</a>
               <a class="item" href="login.html">登录</a>
             </div>
             <div class="">
+              <div class="cart">
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+              </div>
               <div class="avatar">
                 <a href="user.html"><img src="http://www.gravatar.com/avatar/hash" alt="Avatar"></a>
               </div>
               <div class="info">
                 <p class="name">username</p>
-                <p class="balance">$20.0</p>
+                <p class="balance">$123.4</p>
               </div>
             </div>
           </div>
           
           <div class="search">
             <form id="search-form" method="get" action="search.html">
-              <input name="keyword" type="text" placeholder="搜索">
+              <div class="search-box">
+                <input name="keyword" type="text" placeholder="搜索">
+                <a href="#"><i class="fa fa-search"></i></a>
+              </div>
             </form>
-            <i class="fa fa-search"></i>
           </div>
         </div>
       </header>
       
       <div class="content">
-	      <div id="demo" class="jcImgScroll">
-	<ul>
-		<li><a path="./assets/images/IMG_0005.jpg"></a></li>
-		<li><a path="./assets/images/IMG_0016.jpg"></a></li>
-		<li><a path="./assets/images/IMG_0316.jpg"></a></li>
-		<li><a path="./assets/images/IMG_0321.jpg"></a></li>
-		<li><a path="./assets/images/IMG_0340.jpg"></a></li>
-		<li><a path="./assets/images/IMG_0341.jpg"></a></li>
-		<li><a path="./assets/images/IMG_0342.jpg"></a></li>
-		<li><a path="./assets/images/IMG_0545.png"></a></li>
-		<li><a path="./assets/images/IMG_0338.jpg"></a></li>
-
-	</ul>
-</div>
-	    <div class="main">main</div>
-        <div class="sidebar">sidebar</div>
+        <div id="featured">
+          <h2 class="title">特色游戏</h2>
+          <div id="carousel">
+            <img src="./assets/images/feature/1.jpg" alt="">
+            <img src="./assets/images/feature/2.jpg" alt="">
+            <img src="./assets/images/feature/3.jpg" alt="">
+            <img src="./assets/images/feature/4.jpg" alt="">
+            <img src="./assets/images/feature/5.jpg" alt="">
+            <img src="./assets/images/feature/6.jpg" alt="">
+            <img src="./assets/images/feature/7.jpg" alt="">
+          </div>
+        </div>
+        <div id="main">
+          <h3 class="section-title">全新上架</h3>
+          <div id="newest" class="gamelist">
+            <div class="game">
+              <a href="#">
+                <img class="game-cover" src="./assets/images/covers/1.jpg" />
+                <div class="game-price">
+                  <img class="game-price-badge" src="" />
+                </div>
+              </a>
+            </div>
+            <div class="game">
+              <a href="#">
+                <img class="game-cover" src="./assets/images/covers/2.png" />
+                <div class="game-price">
+                  <img class="game-price-badge" src="" />
+                </div>
+              </a>
+            </div>
+            <div class="game">
+              <a href="#">
+                <img class="game-cover" src="./assets/images/covers/3.jpg" />
+                <div class="game-price">
+                  <img class="game-price-badge" src="" />
+                </div>
+              </a>
+            </div>
+          </div>
+          <h3 class="section-title">热门推荐</h3>
+          <div id="newest" class="gamelist">
+            <div class="game">
+              <a href="#">
+                <img class="game-cover" src="./assets/images/covers/4.jpg" />
+                <div class="game-price">
+                  <img class="game-price-badge" src="" />
+                </div>
+              </a>
+            </div>
+            <div class="game">
+              <a href="#">
+                <img class="game-cover" src="./assets/images/covers/5.jpg" />
+                <div class="game-price">
+                  <img class="game-price-badge" src="" />
+                </div>
+              </a>
+            </div>
+            <div class="game">
+              <a href="#">
+                <img class="game-cover" src="./assets/images/covers/6.jpg" />
+                <div class="game-price">
+                  <img class="game-price-badge" src="" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="sidebar">
+          <h3 class="section-title">分类</h3>
+          <ul id="categories">
+          </ul>
+        </div>
       </div>
       
-      <footer class="footer">footer</footer>
+      <footer class="footer">
+      </footer>
     </div>
 
+    <script src="./assets/js/jquery-2.1.4.js"></script>
+    <script src="./assets/js/jquery.waterwheelCarousel.min.js"></script>
+		<script>
+      $(document).ready(function() {
+        $("#carousel").waterwheelCarousel({
+          // include options like this:
+          // (use quotes only for string values, and no trailing comma after last option)
+          // option: value,
+          // option: value
+        });
+      });
+    </script>
+   
   </body>
 </html>
