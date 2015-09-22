@@ -4,6 +4,8 @@
 }
 
 body {
+  position: relative;
+  min-height: 100%;
   font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
   background: url('../images/background.jpg') center top no-repeat #0b2c19;
 }
@@ -21,6 +23,10 @@ a {
 
 .hidden {
   display: none;
+}
+
+.container {
+  position: relative;
 }
 
 .header {
@@ -153,17 +159,22 @@ a {
 
 .content {
   width: 940px;
-  margin: 45px auto;
+  margin-top: 45px;
+  margin-left: auto;
+  margin-right: auto;
   color: #fff;
+}
+
+.page-content {
+  padding-bottom: 155px;
 }
 
 .content .section-title {
   margin-top: 18px;
-  margin-bottom: 12px;
   text-shadow: 1px 1px 0 #000;
 }
 
-#featured .title {
+.content .title, #featured .title {
   font-size: 32px;
   text-shadow: 1px 1px 0 #000;
 }
@@ -182,14 +193,15 @@ a {
 }
 
 #main {
-  display: inline-block;
+  float: left;
 }
 
-.gamelist {
-  max-width: 700px;
+.game-list {
+  max-width: 660px;
+  margin-top: 18px;
 }
 
-.gamelist .game {
+.game-list .game {
   display: inline-block;
   position: relative;
   margin-right: 24px;
@@ -198,30 +210,32 @@ a {
   transition: box-shadow 0.2s linear;
 }
 
-.gamelist .game:hover {
-  box-shadow: 0 0 25px rgb(3, 209, 1);
+.game-list .game:hover {
+  box-shadow: 0 0 16px rgb(3, 209, 1);
 }
 
-.gamelist .game .game-cover {
+.game-list .game .game-cover {
   display: block;
   width: 190px;
+  border-radius: 2px;
 }
 
-.gamelist .game .game-price-badge {
+.game-list .game .game-price-badge {
   position: absolute;
   bottom: 0;
   right: 0;
   width: 70px;
   height: 25px;
+  border-bottom-right-radius: 2px;
   background: url('../images/badge.png');
   transition: background 0.2s linear;
 }
 
-.gamelist .game:hover .game-price-badge {
+.game-list .game:hover .game-price-badge {
   background: url('../images/badge-light.png');
 }
 
-.gamelist .game .game-price {
+.game-list .game .game-price {
   position: absolute;
   bottom: 4px;
   right: 0;
@@ -233,6 +247,7 @@ a {
 #sidebar {
   float: right;
   width: 240px;
+  min-height: 639px;
   padding-top: 18px;
 }
 
@@ -271,6 +286,10 @@ a {
   background: rgba(255, 255, 255, 0.1);
 }
 
+#sidebar .block .block-content .item.active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
 #sidebar .categories li {
   display: block;
   line-height: 32px;
@@ -278,13 +297,22 @@ a {
   font-size: 13px;
 }
 
+.clearfix {
+  clear: both;
+}
+
 .footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
   height: 110px;
   background: #091e0a;
 }
 
 .footer .content {
   margin: 0 auto;
+  padding: 0;
 }
 
 .footer .content .footer-text {
