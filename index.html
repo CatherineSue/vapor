@@ -7,6 +7,34 @@
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+          <script src="./assets/js/jquery-2.1.4.js"></script>
+      <!- New ->
+		<script type="text/javascript" src="./assets/js/jQuery-easing.js"></script>
+		<script type="text/javascript" src="./assets/js/jQuery-jcImgScroll.js"></script>
+		<script type="text/javascript">
+		$(function(){
+			$("#demo").jcImgScroll({
+				arrow : {
+					width:300,	
+					height:400,
+					x:60,
+					y:0
+				},
+			    width :330, //设置图片宽度
+				height:469, //设置图片高度
+				imgtop:22,//每张图片的上下偏移量
+				imgleft:-20,//每张图片的左边偏移量
+				imgwidth:30,//每张图片的宽度偏移量
+				imgheight:44,//每张图片的高度偏移量
+				count : 9,
+				offsetX : 60,
+				NumBtn : false,
+				title:false,
+				setZoom:.8,
+			});
+		
+		});
+		</script>
   </head>
   <body>
     <div class="container">
@@ -45,13 +73,26 @@
       </header>
       
       <div class="content">
-        <div class="main">main</div>
+	      <div id="demo" class="jcImgScroll">
+	<ul>
+		<li><a path="./assets/images/IMG_0005.jpg"></a></li>
+		<li><a path="./assets/images/IMG_0016.jpg"></a></li>
+		<li><a path="./assets/images/IMG_0316.jpg"></a></li>
+		<li><a path="./assets/images/IMG_0321.jpg"></a></li>
+		<li><a path="./assets/images/IMG_0340.jpg"></a></li>
+		<li><a path="./assets/images/IMG_0341.jpg"></a></li>
+		<li><a path="./assets/images/IMG_0342.jpg"></a></li>
+		<li><a path="./assets/images/IMG_0545.png"></a></li>
+		<li><a path="./assets/images/IMG_0338.jpg"></a></li>
+
+	</ul>
+</div>
+	    <div class="main">main</div>
         <div class="sidebar">sidebar</div>
       </div>
       
       <footer class="footer">footer</footer>
     </div>
-    
-    <script src="./assets/js/jquery-2.1.4.js"></script>
+
   </body>
 </html>
