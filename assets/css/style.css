@@ -182,7 +182,7 @@ a {
 }
 
 #main {
-  float: left;
+  display: inline-block;
 }
 
 .gamelist {
@@ -279,5 +279,25 @@ a {
 }
 
 .footer {
-  height: 200px;
+  height: 110px;
+  background: #091e0a;
+}
+
+.footer .content {
+  margin: 0 auto;
+}
+
+.footer .content .footer-text {
+  padding-top: 30px;
+  font-size: 12px;
+  line-height: 24px;
+  color: #b8b6b4;
+}
+
+.footer .content .footer-text a {
+  color: #b8b6b4;
+}
+
+.footer .content .footer-text a:hover {
+  color: #fff;
 }
