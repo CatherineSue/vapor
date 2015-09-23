@@ -92,9 +92,23 @@ a {
 }
 
 .header .right .avatar {
+  position: relative;
   float: right;
   height: 40px;
   padding-top: 20px;
+}
+
+.header .right .avatar .cover {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.25);
+  height: 40px;
+  width: 40px;
+  z-index: 10;
+  transition: background 0.1s ease-out;
+}
+
+.header .right .avatar:hover .cover {
+  background: rgba(0, 0, 0, 0);
 }
 
 .header .right .avatar img {
@@ -109,6 +123,7 @@ a {
 }
 
 .header .right .info .name {
+  height: 20px;
   font-size: 14px;
 }
 
@@ -195,6 +210,12 @@ a {
 
 #main {
   float: left;
+  width: 690px;
+}
+
+#main .error {
+  margin-top: 18px;
+  font-size: 13px;
 }
 
 .game-list {
@@ -245,6 +266,203 @@ a {
   font-size: 13px;
 }
 
+.login-panel {
+  position: relative;
+  margin-top: 64px;
+  margin-bottom: 10px;
+  padding: 0 15px 20px 15px;
+  background: linear-gradient(to bottom, rgba(64, 183, 123, 0.4) 5%, rgba(64, 183, 123, 0.2) 95%);
+  box-shadow: 0px 0px 3px 0px rgba(20, 20, 20, 0.75);
+}
+
+.login-panel .left-panel {
+  min-width: 350px;
+  max-width: 520px;
+  float: left;
+  padding: 9px 20px;
+}
+
+.login-panel .divider {
+  position: absolute;
+  left: 390px;
+  top: 0;
+  bottom: 0;
+  margin: 20px;
+  width: 2px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.login-panel .right-panel {
+  width: 314px;
+  float: left;
+  padding: 9px 35px;
+}
+
+.login-panel .description {
+  font-size: 14px;
+  color: #8FA09A;
+}
+
+.login-panel hr {
+  border: rgba(255, 255, 255, 0.2) solid 1px;
+  margin: 15px 0;
+}
+
+.login-panel label {
+  display: block;
+  margin-top: 14px;
+  font-size: 13px;
+  color: #B5CABC;
+}
+
+.login-panel .input-field {
+  width: 200px;
+  margin: 0px;
+  color: #bfbfbf;
+  outline: none;
+  padding: 4px 6px;
+  border: rgba(0, 0, 0, 0.5) solid 1px;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.4);
+  transition: background 0.2s linear;
+}
+
+.login-panel .input-field:focus {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.login-panel .button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 1px 15px;
+  background: #a4d007;
+  background: linear-gradient(to bottom, #a4d007 5%, #536904 95%);
+  border: none;
+  border-radius: 2px;
+  font-size: 15px;
+  line-height: 30px;
+  color: #d2e885;
+  cursor: pointer;
+  border-color: rgb(210, 232, 133);
+}
+
+.login-panel .button:hover {
+  color: #fff;
+  background: linear-gradient(to bottom, #b6d908 5%, #80a006 95%);
+}
+
+.login-panel .right-panel #new-account-info {
+  margin-top: 14px;
+}
+
+.tab-area .tab-header-bar {
+  height: 28px;
+}
+
+.tab-area .tab-header-bar .tab-header {
+  display: inline-block;
+  margin-top: 3px;
+  margin-right: 0px;
+  padding: 1px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.tab-area .tab-header-bar .tab-header.active {
+  display: inline-block;
+  background: linear-gradient(rgba(44, 175, 103, 1) 0%, rgba(44, 175, 103, 0) 100%);
+  padding: 1px;
+}
+
+.tab-area .tab-header-bar .tab-header .tab-header-text {
+  display: block;
+  background: rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  font-size: 13px;
+  color: #4FBC72;
+  line-height: 24px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.tab-area .tab-header-bar .tab-header .tab-header-text:hover {
+  color: #fff;
+  background: linear-gradient(135deg, #2CAF67 0%, #4FBC72 100%);
+}
+
+.tab-area .tab-header-bar .tab-header.active .tab-header-text {
+  line-height: 29px;
+  font-size: 14px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+  text-shadow: -1px -1px rgba(0, 0, 0, 0.25);
+}
+
+.tab-area .tab-content {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.tab-area .tab-content hr {
+  border: rgba(255, 255, 255, 0.2) solid 1px;
+  margin: 10px;
+}
+
+.balance-tab .current-balance .section-title {
+  padding: 20px 10px 0 10px;
+}
+
+.balance-tab  .current-balance p.balance {
+  padding: 10px;
+}
+
+.balance-tab form.add-balance-form {
+  padding: 10px 10px 20px 10px;
+}
+
+.balance-tab form.add-balance-form legend {
+  margin-bottom: 10px;
+}
+
+.balance-tab form.add-balance-form .form-input {
+  display: inline-block;
+  height: 25px;
+  padding: 4px 6px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  box-shadow: 1px 1px 0 0 rgba(91, 132, 181, 0.2);
+  vertical-align: middle;
+}
+
+.balance-tab form.add-balance-form .form-input input {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background: transparent;
+  font-size: 13px;
+  color: #fff;
+  line-height: 21px;
+}
+
+.balance-tab form.add-balance-form .submit-button {
+  display: inline-block;
+  padding: 1px 15px;
+  background: #a4d007;
+  background: linear-gradient(to bottom, #a4d007 5%, #536904 95%);
+  border: none;
+  border-radius: 2px;
+  font-size: 15px;
+  line-height: 30px;
+  color: #d2e885;
+  cursor: pointer;
+  border-color: rgb(210, 232, 133);
+}
+
+.balance-tab form.add-balance-form .submit-button:hover {
+  color: #fff;
+  background: linear-gradient(to bottom, #b6d908 5%, #80a006 95%);
+}
+
 #sidebar {
   float: right;
   width: 240px;
@@ -252,18 +470,34 @@ a {
   padding-top: 18px;
 }
 
+#sidebar .avatar {
+  float: right;
+}
+
+#sidebar .avatar img {
+  border-radius: 2px;
+}
+
+#sidebar .info {
+  float: right;
+}
+
+#sidebar .info .username h1 {
+  font-size: 26px;
+}
+
 #sidebar .block .block-header {
   padding: 4px 4px 4px 6px;
   font-size: 12px;
   color: #8f98a0;
-  background: #091e0a;
+  background: rgba(0, 0, 0, 0.4);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
 }
 
 #sidebar .block .block-content {
   padding: 4px 2px 4px 4px;
-  border: #091e0a solid 1px;
+  border: rgba(0, 0, 0, 0.4) solid 1px;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }

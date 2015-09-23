@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <title>Vapor</title>
+    
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="content">
+          <div class="logo">
+            <a href="index.html"><img src="./assets/images/vapor.png" alt="Vapor" /></a>
+          </div>
+          
+          <nav class="nav">
+            <a class="item" href="index.html">商店</a>
+            <a class="item" href="user-library.html">游戏库</a>
+          </nav>
+          
+          <div class="right">
+            <div id="reg-login" class="hidden">
+              <a class="item" href="register.html">注册</a>
+              <a class="item" href="login.html">登录</a>
+            </div>
+            <div class="">
+              <div class="cart">
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+              </div>
+              <div class="avatar">
+                <a href="user-library.html">
+                  <div class="cover"></div>
+                  <img src="http://www.gravatar.com/avatar/a8c29bd3c83109e0cb63ca978a819787" alt="Avatar">
+                </a>
+              </div>
+              <div class="info">
+                <p class="name">betakuang</p>
+                <p class="balance">$123.45</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="search">
+            <form id="search-form" method="get" action="search.html">
+              <div class="search-box">
+                <input name="keyword" type="text" placeholder="搜索">
+                <a href="#" onclick="submitSearchForm();"><i class="fa fa-search"></i></a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </header>
+      
+      <div class="content page-content">
+        <div id="main">
+          <div class="tab-area">
+            <div class="tab-header-bar">
+              <div class="tab-header active">
+                <a href="#" class="tab-header-text">游戏库</a>
+              </div>
+              <div class="tab-header">
+                <a href="user-balance.html" class="tab-header-text">账户余额</a>
+              </div>
+            </div>
+            <div class="tab-content">
+              <div class="game-list">
+                <div class="game">
+                  <a href="#">
+                    <img class="game-cover" src="./assets/images/covers/1.jpg" />
+                  </a>
+                </div>
+                <div class="game">
+                  <a href="#">
+                    <img class="game-cover" src="./assets/images/covers/2.png" />
+                  </a>
+                </div>
+                <div class="game">
+                  <a href="#">
+                    <img class="game-cover" src="./assets/images/covers/3.jpg" />
+                  </a>
+                </div>
+                <div class="game">
+                  <a href="#">
+                    <img class="game-cover" src="./assets/images/covers/4.jpg" />
+                  </a>
+                </div>
+                <div class="game">
+                  <a href="#">
+                    <img class="game-cover" src="./assets/images/covers/5.jpg" />
+                  </a>
+                </div>
+                <div class="game">
+                  <a href="#">
+                    <img class="game-cover" src="./assets/images/covers/6.jpg" />
+                  </a>
+                </div>
+                <div class="game">
+                  <a href="#">
+                    <img class="game-cover" src="./assets/images/covers/7.jpg" />
+                  </a>
+                </div>
+                <div class="game">
+                  <a href="#">
+                    <img class="game-cover" src="./assets/images/covers/8.jpg" />
+                  </a>
+                </div>
+                <div class="game">
+                  <a href="#">
+                    <img class="game-cover" src="./assets/images/covers/9.jpg" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="sidebar">
+          <div class="avatar">
+            <img src="http://www.gravatar.com/avatar/a8c29bd3c83109e0cb63ca978a819787?s=220" />
+          </div>
+          <div class="info">
+            <div class="username">
+              <h1>betakuang</h1>
+            </div>
+          </div>
+        </div>
+        
+        <div class="clearfix"></div>
+      </div>
+      
+      <footer class="footer">
+        <div class="content">
+          <div class="footer-text">
+            <p>© 2015 Vapor. All rights reserved.</p>
+            <p><a href="#">关于 Vapor</a> | <a href="#">帮助</a> | <a href="#">加入我们</a></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script src="./assets/js/jquery-2.1.4.min.js"></script>
+    <script src="./assets/js/vapor.js"></script>
+  </body>
+</html>
