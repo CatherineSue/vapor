@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-	<head>
+  <head>
     <meta charset="utf-8">
     	
     <title>Vapor</title>
@@ -18,7 +18,7 @@
           
           <nav class="nav">
             <a class="item" href="index.html">商店</a>
-            <a class="item" href="user.html#library">游戏库</a>
+            <a class="item" href="user-library.html">游戏库</a>
           </nav>
           
           <div class="right">
@@ -31,10 +31,13 @@
                 <a href="#"><i class="fa fa-shopping-cart"></i></a>
               </div>
               <div class="avatar">
-                <a href="user.html"><img src="http://www.gravatar.com/avatar/hash" alt="Avatar"></a>
+                <a href="user-library.html">
+                  <div class="cover"></div>
+                  <img src="http://www.gravatar.com/avatar/a8c29bd3c83109e0cb63ca978a819787" alt="Avatar">
+                </a>
               </div>
               <div class="info">
-                <p class="name">username</p>
+                <p class="name">betakuang</p>
                 <p class="balance">$123.45</p>
               </div>
             </div>
@@ -43,7 +46,7 @@
           <div class="search">
             <form id="search-form" method="get" action="search.html">
               <div class="search-box">
-                <input name="keyword" type="text" value="hello world" placeholder="搜索">
+                <input name="keyword" type="text" placeholder="搜索">
                 <a href="#" onclick="submitSearchForm();"><i class="fa fa-search"></i></a>
               </div>
             </form>
@@ -55,6 +58,9 @@
         <h2 class="title">hello world 的搜索结果</h2>
         
         <div id="main">
+          <div class="error hidden">
+            <p>喔唷，找不到任何结果。</p>
+          </div>
           <div class="game-list">
             <div class="game">
               <a href="#">
