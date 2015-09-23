@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<title>Vapor</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/flexslider.css" type="text/css" media="screen" />
+
+</head>
+<body>
+
+	<div class="container">
+		<header class="header">
+			<div class="content">
+				<div class="logo">
+					<a href="index.html"><img src="./assets/images/vapor.png" alt="Vapor" /></a>
+				</div>
+				
+				<nav class="nav">
+					<a class="item" href="index.html">商店</a>
+					<a class="item" href="user.html#library">游戏库</a>
+				</nav>
+				
+				<div class="right">
+					<div id="cart">
+					</div>
+					<div id="reg-login" class="hidden">
+						<a class="item" href="register.html">注册</a>
+						<a class="item" href="login.html">登录</a>
+					</div>
+					<div class="">
+						<div class="cart">
+							<a href="#"><i class="fa fa-shopping-cart"></i></a>
+						</div>
+						<div class="avatar">
+							<a href="user.html"><img src="http://www.gravatar.com/avatar/hash" alt="Avatar"></a>
+						</div>
+						<div class="info">
+							<p class="name">username</p>
+							<p class="balance">$123.4</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="search">
+					<form id="search-form" method="get" action="search.html">
+						<div class="search-box">
+							<input name="keyword" type="text" placeholder="搜索">
+							<a href="#"><i class="fa fa-search"></i></a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</header>
+		
+		<div class="content-top">
+			<div class="blockbg">
+				<a class="item" href="vapor.com#gameliabrary.com">所有游戏</a>
+				
+				>
+				<a class="item" href="vapor.com#action.com">动作游戏</a>
+				
+				>
+				<a class="item" href="#">
+					<span itemprop="name">ARK: Survival Evolved</span>
+				</a>
+			</div>
+			<div class="single content"> 
+				<p>ARK: Survival Evolved</p><br><br>
+				<div class="flexslider">
+					<ul class="slides">
+						<li data-thumb="./assets/images/single/1.jpg"><img src="./assets/images/single/1.jpg"></li>
+						<li data-thumb="./assets/images/single/2.jpg"><img src="./assets/images/single/2.jpg"></li>
+						<li data-thumb="./assets/images/single/3.jpg"><img src="./assets/images/single/3.jpg"></li>
+						<li data-thumb="./assets/images/single/4.jpg"><img src="./assets/images/single/4.jpg"></li>
+					</ul>
+				</div>
+				<!-- FlexSlider -->
+				<script src="./assets/js/jquery-2.1.4.js"></script>
+				<script defer src="./assets/js/jquery.flexslider.js"></script>
+				
+				<script>
+					$(window).load(function() {
+						$('.flexslider').flexslider({
+							animation: "slide",
+							controlNav: "thumbnails"
+						});
+					});
+				</script>
+				
+			</div>
+			
+			<div class="content-main">
+				<div class="content-main-right">
+					<img src="assets/images/covers/2.png" alt="2">
+					<p> 
+						开发商: Hello Inc.
+					</p>
+					<br></br>
+					<div class="item_add">
+						<span class="item_price">
+							<a class="price">$30.00</a>
+							<a class="add" href="#">Add to cart</a>
+						</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="content-more">
+				<h2> 更多信息 </h2>
+				<p>
+					As a man or woman stranded naked, 
+					freezing & starving on a mysterious 
+					island, you must hunt, harvest,
+					craft items, grow crops, 
+					& build shelters to survive. 
+					Use skill and cunning to kill 
+					or tame & ride the Dinosaurs & 
+					primeval creatures roaming the land, 
+					& team up with hundreds of players or play locally! 
+					<br>
+					开发商: Hello Inc.
+				</p>
+
+			</div>
+		</div>
+		<footer class="footer-single">
+        <div class="content">
+          <div class="footer-text">
+            <p>© 2015 Vapor. All rights reserved.</p>
+            <p><a href="#">关于 Vapor</a> | <a href="#">帮助</a> | <a href="#">加入我们</a></p>
+          </div>
+        </div>
+      </footer>
+	</div>
+	
+</body>      
+</html>
