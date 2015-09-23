@@ -185,7 +185,7 @@
     timing = new Vivus('timing-example', timingProps);
   }
 
-  var hi = new Vivus('hi-there', {type: 'scenario-sync', duration: 20, start: 'autostart', dashGap: 20, forceRender: false},
+  var hi = new Vivus('hi-there', {type: 'async', duration: 200, start: 'autostart', dashGap: 200, forceRender: false},
     function () {
       if (window.console) {
         console.log('Animation finished. [log triggered from callback]');
