@@ -144,17 +144,18 @@ a {
   border: none;
   outline: none;
 }
-
+  
 .header .search .search-box a {
   color: #fff;
   position: absolute;
+  width: 24px;
+  height: 27px;
   top: 2px;
   right: 2px;
 }
 
 .header .search .search-box a i {
-  width: 24px;
-  height: 27px;
+  vertical-align: middle;
 }
 
 .content {
