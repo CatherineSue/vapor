@@ -320,24 +320,29 @@ a {
 }
 
 .single.content{
-  width: 600px;
+  width: 650px;
   float: left;
 }
 
 .content-main-right{
   display: inline;
   float: right;
-  width: 256px;
-  padding-right: 30px;
+  width: 250px;
+  margin-left: 15px;
   padding-top: 110px;
 }
 
+.content-main-right img{
+	width: 250px;
+}
+
 .content-main-right p{
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .item_add{
   float: right;
+  margin-top: 5px;
 }
 
 .item_add a{
