@@ -1,5 +1,9 @@
 # Vapor
 
-和 [@CatherineSue](https://github.com/CatherineSue) 一起写的~~山寨 Steam~~ 小学期项目前端。
+Some static web pages of an online game store imitating Steam. Designed and developed as a course work with [@CatherineSue](https://github.com/CatherineSue).
 
-内容及图片来自网络，版权为原作者所有。
+Contents and images are downloaded from the Internet. Copyrights belong to their owners.
+
+## License
+
+GNU GPLv3
